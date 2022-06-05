@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin3dp">3dp</dimen>
+    <dimen name="margin8dp">8dp</dimen>
+    <dimen name="margin10dp">10dp</dimen>
+    <dimen name="margin11dp">11dp</dimen>
+    <dimen name="margin12dp">12dp</dimen>
+    <dimen name="margin15dp">15dp</dimen>
+    <dimen name="margin16dp">16dp</dimen>
+    <dimen name="margin20dp">20dp</dimen>
+    <dimen name="margin23dp">23dp</dimen>
+    <dimen name="margin25dp">25dp</dimen>
+    <dimen name="margin26dp">26dp</dimen>
+    <dimen name="margin29dp">29dp</dimen>
+    <dimen name="margin30dp">30dp</dimen>
+    <dimen name="margin41dp">41dp</dimen>
+    <dimen name="margin48dp">48dp</dimen>
+    <dimen name="margin69dp">69dp</dimen>
+    <dimen name="margin71dp">71dp</dimen>
+    <dimen name="margin90dp">90dp</dimen>
+    <dimen name="margin117dp">117dp</dimen>
+    <dimen name="margin121dp">121dp</dimen>
+    <dimen name="margin143dp">143dp</dimen>
+    <dimen name="margin144dp">144dp</dimen>
+    <dimen name="margin178dp">178dp</dimen>
+    <dimen name="margin196dp">196dp</dimen>
+    <dimen name="margin201dp">201dp</dimen>
+    <dimen name="margin258dp">258dp</dimen>
+    <dimen name="margin296dp">296dp</dimen>
+    <dimen name="margin328dp">328dp</dimen>
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Recent</string>
+    <string name="brave_new_world_label">Brave New\nWorld</string>
+    <string name="brave_new_world_description">The novel opens in the World State city of London in AF (After Ford) 632 (AD 2540 in the Gregorian...</string>
+    <string name="brave_new_world_score">52%</string>
+    <string name="jane_eyre_label">Jane Eyre</string>
+    <string name="jane_eyre_description">The novel follows the story of Jane, a seemingly plain and simple girl as she battles through life\'s struggles. Jane has many obstacles in her life - her cruel...</string>
+    <string name="jane_eyre_score">5%</string>
+    <string name="little_women_label">Little Women</string>
+    <string name="little_women_description">The story follows the lives of the four March sisters—Meg, Jo, Beth, and Amy—and details their passage from childhood to womanhood. It is loosely based...</string>
+    <string name="little_women_score">50%</string>
+
+</resources>

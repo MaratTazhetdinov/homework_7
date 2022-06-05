@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin178dp"
+        android:layout_marginTop="@dimen/margin16dp"
+        android:layout_marginLeft="@dimen/margin16dp"
+        android:layout_marginRight="@dimen/margin16dp"
+        app:cardCornerRadius="@dimen/margin10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/margin20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/margin29dp"
+                android:src="@drawable/dot"/>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/margin25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/margin29dp"
+                android:src="@drawable/dot" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/margin30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/margin29dp"
+                android:src="@drawable/dot"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/margin15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/margin26dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="@dimen/margin15dp"
+                android:id="@+id/brave_new_world_image"
+                app:cardCornerRadius="@dimen/margin10dp">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/brave_new_world_image"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/margin15dp"
+                app:layout_constraintStart_toEndOf="@id/brave_new_world_image"
+                android:layout_marginStart="@dimen/margin15dp"
+                android:textSize="@dimen/margin20dp"
+                android:textColor="@color/black"
+                android:text="@string/brave_new_world_label"
+                android:id="@+id/brave_new_world_label"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/brave_new_world_label"
+                android:layout_marginTop="@dimen/margin10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/margin143dp"
+                android:text="@string/brave_new_world_description"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/margin29dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="@dimen/margin69dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/margin10dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/margin41dp"
+                android:layout_height="@dimen/margin41dp"
+                app:layout_constraintStart_toEndOf="@id/brave_new_world_image"
+                android:layout_marginStart="@dimen/margin12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="@dimen/margin16dp"
+                app:cardCornerRadius="@dimen/margin10dp"
+                android:id="@+id/brave_new_world_score">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/brave_new_world_score"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/margin15dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/margin41dp"
+                android:layout_height="@dimen/margin41dp"
+                app:layout_constraintStart_toEndOf="@id/brave_new_world_score"
+                android:layout_marginStart="@dimen/margin16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="@dimen/margin16dp"
+                app:cardCornerRadius="@dimen/margin10dp"
+                android:id="@+id/brave_new_world_star">
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/selected_star"
+                    android:background="@color/white"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/margin41dp"
+                android:layout_height="@dimen/margin41dp"
+                android:layout_marginBottom="@dimen/margin16dp"
+                app:cardCornerRadius="@dimen/margin10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/brave_new_world_star"
+                android:layout_marginStart="@dimen/margin16dp">
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:src="@drawable/bin" />
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin178dp"
+        android:layout_marginTop="@dimen/margin16dp"
+        android:layout_marginLeft="@dimen/margin16dp"
+        android:layout_marginRight="@dimen/margin16dp"
+        app:cardCornerRadius="@dimen/margin10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/margin20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/margin29dp"
+                android:src="@drawable/dot"/>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/margin25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/margin29dp"
+                android:src="@drawable/dot" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/margin30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/margin29dp"
+                android:src="@drawable/dot"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/margin15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/margin26dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="@dimen/margin15dp"
+                android:id="@+id/jane_eyre_image"
+                app:cardCornerRadius="@dimen/margin10dp">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/jane_eyre_image"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/margin15dp"
+                app:layout_constraintStart_toEndOf="@id/jane_eyre_image"
+                android:layout_marginStart="@dimen/margin15dp"
+                android:textSize="@dimen/margin20dp"
+                android:textColor="@color/black"
+                android:text="@string/jane_eyre_label"
+                android:id="@+id/jane_eyre_label"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/jane_eyre_label"
+                android:layout_marginTop="@dimen/margin10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/margin143dp"
+                android:text="@string/jane_eyre_description"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/margin29dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="@dimen/margin69dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/margin10dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/margin41dp"
+                android:layout_height="@dimen/margin41dp"
+                app:layout_constraintStart_toEndOf="@id/jane_eyre_image"
+                android:layout_marginStart="@dimen/margin12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="@dimen/margin16dp"
+                app:cardCornerRadius="@dimen/margin10dp"
+                android:id="@+id/jane_eyre_score">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/jane_eyre_score"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/margin15dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/margin41dp"
+                android:layout_height="@dimen/margin41dp"
+                app:layout_constraintStart_toEndOf="@id/jane_eyre_score"
+                android:layout_marginStart="@dimen/margin16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="@dimen/margin16dp"
+                app:cardCornerRadius="@dimen/margin10dp"
+                android:id="@+id/jane_eyre_star">
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/unselected_star"
+                    android:background="@color/white"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/margin41dp"
+                android:layout_height="@dimen/margin41dp"
+                app:layout_constraintStart_toEndOf="@id/jane_eyre_star"
+                android:layout_marginStart="@dimen/margin16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="@dimen/margin16dp"
+                app:cardCornerRadius="@dimen/margin10dp">
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bin"
+                    android:background="@color/white"/>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin178dp"
+        android:layout_marginTop="@dimen/margin16dp"
+        android:layout_marginLeft="@dimen/margin16dp"
+        android:layout_marginRight="@dimen/margin16dp"
+        app:cardCornerRadius="@dimen/margin10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/margin20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/margin29dp"
+                android:src="@drawable/dot"/>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/margin25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/margin29dp"
+                android:src="@drawable/dot" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/margin30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/margin29dp"
+                android:src="@drawable/dot"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/margin15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/margin26dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="@dimen/margin15dp"
+                android:id="@+id/little_women_image"
+                app:cardCornerRadius="@dimen/margin10dp">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/little_women_image"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/margin15dp"
+                app:layout_constraintStart_toEndOf="@id/little_women_image"
+                android:layout_marginStart="@dimen/margin15dp"
+                android:textSize="@dimen/margin20dp"
+                android:textColor="@color/black"
+                android:text="@string/little_women_label"
+                android:id="@+id/little_women_label"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/little_women_label"
+                android:layout_marginTop="@dimen/margin10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/margin143dp"
+                android:text="@string/jane_eyre_description"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/margin29dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="@dimen/margin69dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/margin10dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/margin41dp"
+                android:layout_height="@dimen/margin41dp"
+                app:layout_constraintStart_toEndOf="@id/little_women_image"
+                android:layout_marginStart="@dimen/margin12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="@dimen/margin16dp"
+                app:cardCornerRadius="@dimen/margin10dp"
+                android:id="@+id/little_women_score">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/little_women_score"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/margin15dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/margin41dp"
+                android:layout_height="@dimen/margin41dp"
+                app:layout_constraintStart_toEndOf="@id/little_women_score"
+                android:layout_marginStart="@dimen/margin16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="@dimen/margin16dp"
+                app:cardCornerRadius="@dimen/margin10dp"
+                android:id="@+id/little_women_star">
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/unselected_star"
+                    android:background="@color/white"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/margin41dp"
+                android:layout_height="@dimen/margin41dp"
+                app:layout_constraintStart_toEndOf="@id/little_women_star"
+                android:layout_marginStart="@dimen/margin16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="@dimen/margin16dp"
+                app:cardCornerRadius="@dimen/margin10dp">
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bin"
+                    android:background="@color/white"/>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
+
+
+
